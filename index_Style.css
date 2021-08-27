@@ -1,0 +1,29 @@
+@charset "utf-8";
+#wapper {
+	height: 700px;
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #000;
+}
+#bird {
+	background-color: #000;
+	float: left;
+	width: 950px;
+}
+#logo {
+	float: left;
+	width: 430px;
+	padding-left: 0px;
+	height: 410px;
+	margin-left: 100px;
+}
+#menubar {
+	float: left;
+	width: 400px;
+	background-color: #000;
+	height: 410px;
+	background-image: url(Image/Set_1.png);
+	background-repeat: no-repeat;
+	background-position: 100px;
+}
