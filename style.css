@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+.heading1{
+	width: 100%;
+	text-align: center;
+	color: #C70606;
+	font-size: 30px;
+	clear: both;
+    font-family:myFirstFont;
+	padding: 15px 0px;
+	margin-top: 40px;
+	border-top: #FF0000 thin dotted; 
+	float: left;
+	background: #E8E8E8; 
+}
+
+/*---------------- Menu-------------------*/
+
+.menubar{
+	width: 100%;
+	height: auto;
+	background:#000000;
+	align-content: center;
+	float: left;
+	padding: 10px 5%;
+}
+
+.menu{
+	font-size: 20px;
+	width:20%;
+	float: left;
+	color: aliceblue;
+	border-left: thin dotted #FFA600;
+	padding-left: 20px;
+}
+
+/*---------------- boody------------------*/
+
+.headlogo{
+	width: 80%;
+	padding: 10px 10%;
+	height: auto;
+	text-align: center;
+	float: left;
+	
+}
+
+.sloganback{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #A60002;
+}
+
+.slogan{
+	width: 90%;
+    margin: 10px 3%;
+	float: left;
+	-webkit-animation: flash 2s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.0;
+}
+
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
+
+.about{
+	width: 100%;
+	height:auto;
+	background:#4E0809;
+	float: left;
+	text-align: center;
+}
+
+/*------------------------ Food Gallery ----------------------*/
+
+.foodgallery{
+	width: 100%;
+	height: auto;
+	background: #7B1113;
+	float: left;
+	}
+
+.food {
+	width:20%;
+	margin: 10px 1%;
+	float: left;
+	border: thin solid #D80407;  
+	opacity: 0;
+	transform: translate(0, 200px); 
+  	transition: all 1s;
+}
+
+.food.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+
+@media (min-width:320px) and (max-width:500px){
+.food {	
+	width:90%;
+	margin: 10px 5%;
+	
+	}
+	
+}
+
+@media (min-width:511px) and (max-width:767px){
+.food {	width:48%;}
+
+	
+}
